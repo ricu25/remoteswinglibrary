@@ -28,6 +28,8 @@ jobs:
         if: runner.os == 'Windows'
         run: Set-DisplayResolution -Width 1920 -Height 1080 -Force; mvn clean verify -Dexcludes=Webstart
         shell: powershell
+      - name: Show Python version
+        run: python --version
 #      - name: Run tests MacOS
 #        if: runner.os == 'macOS'
 #        run: mvn clean verify -Dexcludes=Webstart
