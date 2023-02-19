@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ 'ubuntu-latest', 'windows-latest' ]
-        python-version: [3.7.15, 3.9.16, 3.10.10, 3.11.2, 3.12.0]
+        python-version: [3.7.15, 3.9.16, 3.10.10, 3.11.2]
         include:
           - os: ubuntu-latest
             set_display: export DISPLAY=:99; Xvfb :99 -screen 0 1920x1080x24 -ac -noreset & sleep 3
